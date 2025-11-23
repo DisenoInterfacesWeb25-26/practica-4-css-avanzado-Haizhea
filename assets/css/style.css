@@ -328,6 +328,8 @@ footer ul li img:hover {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
     }
 
     section {
@@ -336,6 +338,8 @@ footer ul li img:hover {
 
     aside {
       flex: 0 0 30%;
+      height: 40%;
+      margin-top: 5%;
     }
   }
 
