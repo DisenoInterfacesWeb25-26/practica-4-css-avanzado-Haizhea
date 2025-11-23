@@ -1,0 +1,21 @@
+/* Ocultar elementos que no queremos imprimir */
+header,
+nav,
+aside,
+footer {
+    display: none !important;
+}
+
+body {
+    font-size: 14pt;
+    line-height: 1.6;
+    background: white;
+    color: black;
+}
+
+
+* {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+}

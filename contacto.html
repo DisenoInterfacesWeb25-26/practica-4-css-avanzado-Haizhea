@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="title" content="Supermercados DIW">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermercados DIW</title>
+  <meta name="description" content="Tienda de Alimentación en Alicante">
+  <meta name="author" content="Supermercados DIW" />
+  <meta name="keywords" content="supermercado, alimentación, Alicante, comida, bebida, ofertas">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="assets/images/logo.png" alt="logo" height="150" width="150">
+    </a>
+    <h1 class="titulo">Supermercados DIW</h1>
+  </header>
+
+  <nav>
+    <ul class="barra">
+      <li class="links"><a href="index.html"> Inicio </a></li>
+      <li class="links"><a href="servicios.html"> Servicios </a></li>
+      <li class="links"><a href="contacto.html"> Contactos </a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Contactos</h2>
+    <form>
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Ingresa tu nombre" required maxlength="40"
+          pattern="^[A-Za-z0-9ÁÉÍÓÚáéíóúÑñ ]+$" autofocus class="areas">
+        <br>
+
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="Ingresa tu correo electrónico" required class="areas">
+        <br>
+
+        <label for="edad">Edad:</label>
+        <input id="edad" name="edad" type="number" placeholder="Tu edad (18–99)" min="18" max="99" required
+          class="areas">
+        <br>
+
+        <label for="telefono">Teléfono:</label>
+        <input id="telefono" name="telefono" type="tel" placeholder="Ej: 600123456" pattern="[0-9]{9}" required
+          class="areas">
+        <br>
+
+        <label for="consulta">Consulta: </label>
+        <textarea id="consulta" name="consulta" placeholder="Escribe aquí tu consulta" required></textarea>
+        <br>
+
+        <label for="privacidad">
+          <input id="privacidad" name="privacidad" type="checkbox" required>
+          He leído y acepto la <a href="#">política de privacidad</a> y las
+          cookies.
+        </label>
+      </fieldset>
+
+      <br />
+      <input type="submit" value="Enviar" class="boton">
+    </form>
+
+    <br /><br />
+  </section>
+
+  <footer>
+    <div>
+      <h3>&copy; 2020 Supermercados DIW</h3>
+      <h3>
+        <a href="#" target="_blank" class="cookies">Política de privacidad y cookies</a>
+      </h3>
+    </div>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d642.115919854253!2d-0.6576603866229142!3d38.00192885421726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63aa40be9142e5%3A0x88a0050f61ee1b1e!2sMercadona!5e0!3m2!1ses!2ses!4v1760514714565!5m2!1ses!2ses"
+      width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <ul>
+      <li class="redes">
+        <a href="https://www.whatsapp.com/?lang=es" target="_blank" title="WhatsApp" aria-label="WhatsApp">
+          <img src="assets/images/whatsapp.png" alt="whatsapp" width="30">
+        </a>
+      </li>
+
+      <li class="redes">
+        <a href="https://www.instagram.com" target="_blank" title="Instagram" aria-label="Instagram">
+          <img src="assets/images/instagram.png" alt="instagram" width="30">
+        </a>
+      </li>
+
+      <li class="redes">
+        <a href="https://x.com" target="_blank" title="X" aria-label="X">
+          <img src="assets/images/X.png" alt="X" width="30">
+        </a>
+      </li>
+
+      <li class="redes">
+        <a href="https://www.facebook.com" target="_blank" title="Facebook" aria-label="Facebook">
+          <img src="assets/images/facebook.png" alt="facebook" width="30">
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente base */
+body {
+  font-size: 1em;
+  font-family: montserrat, "open sans";
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+/* Header*/
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+header img {
+  height: 100px;
+  width: auto;
+  padding-right: 2em;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2.5em;
+  color: #406c9c;
+  padding-top: 1em;
+  position: relative;
+  top: -20px;
+}
+
+img:not([alt]) {
+  border: 3px solid red;
+}
+
+a[href$=".pdf"]::after {
+  content: url("https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png");
+  margin-left: 5px;
+}
+
+
+/* Navegación*/
+nav {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #db9823;
+  border-radius: 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: background-color 1s ease, color 1s ease;
+  padding: .5em;
+}
+
+nav ul li a:hover {
+  background-color: #db9823;
+  color: #247ddb;
+}
+
+nav ul li a:focus {
+  background: #406C9C;
+}
+
+/* Encabezados */
+
+h2 {
+  font-size: 1.5em;
+  color: #247ddb;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #247ddb;
+}
+
+p,
+label,
+input,
+textarea,
+li {
+  font-size: 1em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Cuerpo Principal*/
+main{
+  margin: 2em 1em;
+}
+section h2 {
+  padding: 20px 10px;
+}
+
+section {
+  padding: 1em 2em;
+  margin: 2%;
+  width: 40%;
+}
+
+article {
+  border: 2px solid #866D42;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+aside {
+  border: 2px solid #866D42;
+  background-color: #3D4C5C;
+  padding: 1em;
+}
+
+aside ul li {
+  color: #db9823;
+}
+
+/*Formulario*/
+
+fieldset {
+  padding: 10px;
+}
+
+input {
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  transition: border-color .3s ease, transform .3s ease;
+}
+
+input:hover {
+  transform: scale(1.03);
+}
+
+input:focus {
+  border: 1px solid #b66d42;
+}
+
+.areas,
+#consulta {
+  width: 100%;
+  border: 1px solid #247ddb;
+  padding: 10px;
+}
+
+.boton {
+  background-color: #33302A;
+  color: #b66d42;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/*Tabla*/
+
+.servicios {
+  margin: 120px auto 60px auto;
+  padding: 2em;
+  max-width: 1000px;
+  text-align: center;
+  border: 2px solid #866D42;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.603);
+}
+
+table {
+  width: 80%;
+  margin: 1em auto;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+
+caption {
+  caption-side: top;
+  font-size: 1.2em;
+  color: #406C9C;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  border: 1px solid #db9823;
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.servicios h2 {
+  color: #247ddb;
+  font-size: 2em;
+  margin-bottom: 1em;
+  border-bottom: 3px solid #db9823;
+  display: inline-block;
+  padding-bottom: 0.3em;
+}
+
+table tbody tr:first-child {
+  background-color: #406C9C;
+  color: #33302A;
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #33302A;
+  color: #db9823;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #3D4C5C;
+  color: #db9823;
+}
+
+/* Al pasar el ratón (hover) sobre una fila */
+table tbody tr:hover {
+  background-color: #db9823;
+  color: #33302A;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #406C9C;
+  color: #db9823;
+  padding: 20px;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+  margin-top: auto;
+  /* asegura que quede abajo */
+}
+
+footer {
+  width: 100%;
+  background-color: #406C9C;
+  color: #db9823;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  display: flex;
+  gap: 15px;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer iframe {
+  max-width: 400px;
+  height: 200px;
+  border: 0;
+  flex-shrink: 0;
+  /* evita que se deforme */
+}
+
+footer ul li img {
+  transition: transform 0.3s ease;
+}
+
+footer ul li img:hover {
+  transform: rotate(360deg) scale(1.6);
+}
+
+/* Diseño Web */
+@media screen and (min-width: 1200px) {
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    text-align: left;
+  }
+
+  nav {
+    position: static;
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    section {
+      flex: 0 0 65%;
+    }
+
+    aside {
+      flex: 0 0 30%;
+    }
+  }
+
+  footer {
+    clear: both;
+    text-align: center;
+  }
+}
+
+/* Diseño para tablet */
+@media screen and (min-width: 700px) and (max-width: 1199px) {
+  body {
+    font-family: Montserrat, "open sans";
+  }
+
+  h header {
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  section {
+    flex: 0 0 70%;
+  }
+
+  aside {
+    flex: 0 0 25%;
+  }
+}
+
+footer {
+  clear: both;
+  text-align: center;
+}
+
+
+/* Diseño para móvil*/
+@media screen and (max-width: 699px) {
+
+  header img {
+    height: 80px;
+  }
+
+  .titulo {
+    font-size: 1.8em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer iframe {
+    width: 90%;
+    height: 200px;
+  }
+}
+
+  footer ul {
+    justify-content: center;
+  }
